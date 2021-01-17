@@ -10,6 +10,11 @@ The following is a screenshot of the excel spreadsheet after the program has fin
 ![Data](https://github.com/DavidLoi/IMDB-WebCrawler/blob/main/Screenshots/Data.PNG)
 
 # How to use?
-The base url can be changed (the line of code underneath) if the user would like to change the year for the movie releases.
+The base url can be changed if the user would like to change the year for the movie releases, refer to the snippet shown below.
 
-source = requests.get('https://www.imdb.com/search/title?title_type=feature&release_date=2009-01-01,2009-12-31').text
+![Source](https://github.com/DavidLoi/IMDB-WebCrawler/blob/main/Screenshots/Source.PNG)
+
+In addition, in some cases a date will be included in the end of the opening weekend profit or budget, so the following are measures against this which will remove the date. Keep in mind that if the year is changed, these measures will need to be changed accordingly.
+
+![Change1](https://github.com/DavidLoi/IMDB-WebCrawler/blob/main/Screenshots/Change1.PNG)
+![Change2](https://github.com/DavidLoi/IMDB-WebCrawler/blob/main/Screenshots/Change2.PNG)
