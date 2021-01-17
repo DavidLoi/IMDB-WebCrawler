@@ -57,6 +57,8 @@ for link in link_list:
     budget = budget.split(" ")
     if len(budget) == 0:
         budget.append("Missing")
+
+    # Cleaning up certain figures that include the date at the end of the price
     if budget[0][-4:] == "2009":
         budget = budget[0][:-6]
     else:
@@ -74,6 +76,8 @@ for link in link_list:
         weekend.append("Missing")
     while weekend[0] == "":
         weekend = weekend[1:]
+
+    # Cleaning up certain figures that include the date at the end of the price
     if weekend[0][-4:] == "2009" or weekend[0][-4:] == "2010":
         weekend = weekend[0][:-6]
     else:
