@@ -7,8 +7,9 @@ I created this webcrawler to help me on a project I had to do for my advanced fu
 # Screenshots
 The following is a screenshot of the excel spreadsheet after the program has finished running, this spreadsheet can also be found in the repository.
 
-![Data](https://github.com/DavidLoi/IMDB-WebCrawler/blob/master/Screenshots/Data.PNG)
+![Data](https://github.com/DavidLoi/IMDB-WebCrawler/blob/main/Screenshots/Data.PNG)
 
 # How to use?
-The base url can be changed if the user would like to change the year for the movie releases.
+The base url can be changed (the line of code underneath) if the user would like to change the year for the movie releases.
+
 source = requests.get('https://www.imdb.com/search/title?title_type=feature&release_date=2009-01-01,2009-12-31').text
